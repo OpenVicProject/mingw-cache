@@ -1,7 +1,7 @@
 name: Setup MinGW Cache
 description: Setup MinGW Cache
 inputs:
-   cache-key:
+  cache-key:
     description: Name for MinGW cache key.
     default: "mingw-cache"
 runs:
@@ -15,4 +15,4 @@ runs:
         path: C:\ProgramData\chocolatey\lib\mingw
         key: ${{inputs.cache-key}}
     - name: Setup MinGW for build
-      uses: egor-tensin/setup-mingw@v2
+      uses: e-t-l/setup-mingw@v2.2.0-e
