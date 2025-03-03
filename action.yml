@@ -10,7 +10,7 @@ runs:
     # Upload cache on completion and check it out now
     - name: Load MinGW Cache
       id: cache-mingw
-      uses: actions/cache@v4.0.0
+      uses: actions/cache@v4
       with:
         path: C:\ProgramData\chocolatey\lib\mingw
         key: ${{inputs.cache-key}}
